@@ -1,0 +1,7 @@
+@media(max-width:1050px){
+    .cours{
+        display: flex;
+        max-width: 40em;
+        justify-content: space-around;
+    }
+}

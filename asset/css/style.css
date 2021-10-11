@@ -1,0 +1,118 @@
+body{
+    margin: 0%;
+    padding: 0%;
+}
+/* Gabriel */
+header{
+    margin-top:20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 18%;
+    padding-right: 18%;
+    /* border: 1px solid black; */
+}
+header > p{
+    width: auto;
+    /* border: 1px solid black; */
+}
+header > img#logo-ecole{
+    width: 170px;
+    height: 80px;
+}
+header > img#logo-panier{
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+}
+div.search-bar{
+    margin-top: 20px;
+    /* border: 1px solid black; */
+    text-align: center;
+
+}
+div.search-bar input#recherche-site{
+    border: 0.5px solid black;
+    border-radius: 5px;
+    padding: 9px;
+    width: 60%;
+    font-size:30px;
+}
+/* Gabriel */
+
+h1{
+    text-align: center;
+    margin-bottom: 0%;
+    margin-top: 25px;
+}
+
+.cours{
+    max-width: 80em;
+    margin:auto;
+    display: flex;
+    flex-wrap: wrap;
+    
+    justify-content:space-between;
+}
+
+.uiux, .php, .react, .node, .my-sql{
+    
+    display : flex;
+    flex-direction: column;
+    width: 250px;
+    border : 1px solid black;
+    border-radius:15px;
+    margin-top: 30px;
+    padding:10px;
+    box-shadow: 5px 5px 5px gray;
+    height: 300px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+section.cours div p{
+    margin:6px;
+    margin-left: 0%;
+}
+section.cours div div.prix{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+section.cours div div.prix p{
+    margin: 6px;
+    margin-left: 0%;
+    margin-right:0%;
+}
+
+img {
+    width : 100%;
+    height : 45%;
+}
+
+.nomcours{
+    font-weight: bold;
+    font-size: 15px;
+}
+.prixbase{
+    color: red;
+    text-decoration: line-through;
+}
+.prixreduction{
+    font-weight: bold;
+}
+.boutonpanier{
+    width : 65%;
+    height: 12%;
+    background-color: rgb(0, 225, 255);
+    border-radius: 8px;
+    margin-left: 0.5em;
+    color : black;
+    border-style : none;
+}
+button.boutonpanier img{
+    width: auto;
+}
+
+.dropdown:hover > #cart-dropdown{
+    display: block;
+}
