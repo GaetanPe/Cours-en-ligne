@@ -1,4 +1,4 @@
-body{
+    body{
     margin: 0%;
     padding: 0%;
 }
@@ -51,8 +51,9 @@ h1{
     margin:auto;
     display: flex;
     flex-wrap: wrap;
-    
+    flex-direction: row;
     justify-content:space-between;
+    border: 1px red solid;
 }
 
 .uiux, .php, .react, .node, .my-sql{
