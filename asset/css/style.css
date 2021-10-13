@@ -1,4 +1,4 @@
-    body{
+body{
     margin: 0%;
     padding: 0%;
 }
@@ -10,17 +10,17 @@ header{
     justify-content: space-between;
     padding-left: 18%;
     padding-right: 18%;
-    /* border: 1px solid black; */
+    border: 1px solid black; 
 }
 header > p{
     width: auto;
     /* border: 1px solid black; */
 }
-header > img#logo-ecole{
+header img#logo-ecole{
     width: 170px;
     height: 80px;
 }
-header > img#logo-panier{
+header img#logo-panier{
     width: 50px;
     height: 50px;
     padding: 10px;
@@ -38,6 +38,13 @@ div.search-bar input#recherche-site{
     width: 60%;
     font-size:30px;
 }
+
+/* Pour afficher la liste dans le panier */
+.panier:hover > #article-panier{
+    display: block;
+    border:1px black solid;
+}
+
 /* Gabriel */
 
 h1{
@@ -49,6 +56,9 @@ h1{
 .cours{
     max-width: 80em;
     margin:auto;
+    margin-top: 25px;
+    margin-bottom: 30px;
+    padding-bottom: 30px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -109,6 +119,11 @@ img {
     margin-left: 0.5em;
     color : black;
     border-style : none;
+    margin:auto;
+}
+.boutonpanier:hover{
+    border:0.1px black solid;
+    cursor: pointer;
 }
 button.boutonpanier img{
     width: auto;
