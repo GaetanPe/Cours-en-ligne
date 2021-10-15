@@ -39,9 +39,7 @@ header img#logo-ecole{
     border:1px black solid;
     margin-left:auto;
 }
-#panier{
-    border:1px red solid;
-}
+
 ul#article-panier{
     margin:0%;
     padding:0px;
@@ -54,12 +52,11 @@ ul#article-panier{
 }
 div.search-bar{
     margin-top: 20px;
-    /* border: 1px solid black; */
+
     text-align: center;
 
 }
 div.search-bar input#recherche-site{
-    border: 0.5px solid black;
     border-radius: 5px;
     padding: 9px;
     width: 60%;
