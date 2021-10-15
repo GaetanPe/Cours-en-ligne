@@ -1,4 +1,4 @@
-var mesBoutons = document.querySelectorAll('#bouton1, #bouton2, #bouton3, #bouton4, #bouton5')
+var mesBoutons = document.querySelectorAll('#adduiux, #addphp, #addreactjs, #b#addnodejs, ##addmysql')
 var textnotif = document.querySelector('#notification')
 for(let i = 0; i < mesBoutons.length; i++){
 
