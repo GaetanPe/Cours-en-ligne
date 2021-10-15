@@ -2,6 +2,7 @@ document.getElementById('adduiux').addEventListener('click',function(){
     localStorage.setItem("nameUIUX","UI/UX")
     localStorage.setItem("prixUIUX","9.99")
     location.reload();
+    
 })
 document.getElementById('addphp').addEventListener('click',function(){
     localStorage.setItem("namePHP","PHP")
@@ -400,55 +401,3 @@ boutonMysql.addEventListener('click',function(){
         }, 3000)
     }    
 })
- 
-
-var boutonvpanier = 1;
-
-boutonvpanier.addEventListener('click',function(){
-var pmysql = localStorage.getItem("imysql");
-var pnode = localStorage.getItem("inode");
-var preact = localStorage.getItem("ireactjs");
-var pphp = localStorage.getItem("iphp");
-var puiux = localStorage.getItem("iuiux");
-
-if(!yy){
-    pmysql++;
-    localStorage.setItem("imysql",pmysql);
-    rafraichir();
-}
-if(!yy){
-    pnode++;
-    localStorage.setItem("inode",pmysql);
-    rafraichir();
-}
-if(!yy){
-    preact++;
-    localStorage.setItem("ireactjs",pmysql);
-    rafraichir();
-}
-if(!yy){
-    pphp++;
-    localStorage.setItem("iphp",pmysql);
-    rafraichir();
-}
-if(!yy){
-    puiux++;
-    localStorage.setItem("iuiux",pmysql);
-    rafraichir();
-}
-
-})
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
