@@ -8,8 +8,7 @@
     <link rel="stylesheet" href="asset/css/style.css">
     <link rel="stylesheet" href="asset/css/tablette.css">
     <link rel="stylesheet" href="asset/css/smartphone.css">
-    <script src="asset/js/script.js"></script>
-    <script src="asset/js/search.js"></script>
+
 
     <title>Cours en ligne</title>
 </head>
@@ -18,99 +17,145 @@
     <header>
         <!-- Logo + Panier -->
         <img id="logo-ecole" src="asset/images/coding.png">
-        <img id="logo-panier" src="asset/images/caddie.png">
-        
-           
+        <div id="panier" class="panier">
+            <img id="logo-panier" src="asset/images/caddie.png">
+            <ul id="article-panier">
+                <li>
+                    <ul class="row-space-between">
+                        <li></li>
+                        <li></li>
+                        <li><button style="display:none"></button></li>
+                    </ul>
+                </li>
+                <li>
+                    <ul class="row-space-between">
+                        <li></li>
+                        <li></li>
+                        <li><button style="display:none"></button></li>
+                    </ul>
+                </li>
+                <li>
+                    <ul class="row-space-between">
+                        <li></li>
+                        <li></li>
+                        <li><button style="display:none"></button></li>
+                    </ul>
+                </li>
+                <li>
+                    <ul class="row-space-between">
+                        <li></li>
+                        <li></li>
+                        <li><button style="display:none"></button></li>
+                    </ul>
+                </li>
+                <li>
+                    <ul class="row-space-between">
+                        <li></li>
+                        <li></li>
+                        <li><button style="display:none"></button></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
     </header>
 
     <!-- La barre de recherche -->
     <div class="search-bar">
         <input type="recherche" id="recherche-site" aria-label="La recherche sur le site" size=50
-            placeholder="Rechercher ...">
+            placeholder="Rechercher ..." onkeyup="search_cours()">
     </div>
+    <button id="SUPPRIMER">SUPP LE LOCAL STORAGE</button>
     <!-- La barre de recherche -->
 
     <h1>Cours en ligne</h1>
     <section class="cours">
+        <div id= "coursvide" class = "hide">
+        </br></br></br></br></br></br></br></br></br><h3> Aucun cours n'est disponible</h3>
 
-        <div class="uiux">
-            <img src="asset/images/UIUX.png" alt="">
-            <h2 class="nomcours">UX/UI</h2>
-            <p>- Nombre d'étoiles -</p>
+        </div>
+        <div id="uiux" class="cour">
+            <img class="img" src="" alt="">
+            <h2 class="nomcours"></h2>
+            <p class="nb_etoiles"></p>
             <div class="prix">
-                <p class="prixbase">200 €</p>
-                <p class="prixreduction">9.99 €</p>
+                <p class="prixbase"></p>
+                <p class="prixreduction"></p>
             </div>
-            <p>Disponible :</p>
-            <button class="boutonpanier">
+            <p class="disponibilite"></p>
+
+            <button id="adduiux" class="boutonpanier">
                 <img src="asset/images/caddie.png" alt="">
                 Ajouter au panier
             </button>
         </div>
 
-        <div class="php">
-            <img src="asset/images/php.png" alt="">
-            <h2 class="nomcours">PHP 8</h2>
-            <p>- Nombre d'étoiles -</p>
+        <div id="php" class="cour">
+            <img class="img" src="" alt="">
+            <h2 class="nomcours"></h2>
+            <p class="nb_etoiles"></p>
             <div class="prix">
-                <p class="prixbase">200 €</p>
-                <p class="prixreduction">9.99 €</p>
+                <p class="prixbase"></p>
+                <p class="prixreduction"></p>
             </div>
-            <p>Disponible :</p>
-            <button class="boutonpanier">
+            <p class="disponibilite"></p>
+
+            <button class="boutonpanier" id="addphp">
                 <img src="asset/images/caddie.png" alt="">
                 Ajouter au panier
             </button>
         </div>
 
-        <div class="react">
-            <img src="asset/images/react.png" alt="">
-            <h2 class="nomcours">React JS</h2>
-            <p>- Nombre d'étoiles -</p>
+        <div id="react" class="cour">
+            <img class="img" src="" alt="">
+            <h2 class="nomcours"></h2>
+            <p class="nb_etoiles"></p>
             <div class="prix">
-                <p class="prixbase">200 €</p>
-                <p class="prixreduction">9.99 €</p>
+                <p class="prixbase"></p>
+                <p class="prixreduction"></p>
             </div>
-            <p>Disponible :</p>
-            <button class="boutonpanier">
-                <img src="asset/images/caddie.png" alt="">
-                Ajouter au panier
-            </button>
+            <p class="disponibilite"></p>
 
-        </div>
-
-        <div class="node">
-            <img src="asset/images/node.png" alt="">
-            <h2 class="nomcours">Node JS</h2>
-            <p>- Nombre d'étoiles -</p>
-            <div class="prix">
-                <p class="prixbase">200 €</p>
-                <p class="prixreduction">9.99 €</p>
-            </div>
-            <p>Disponible :</p>
-            <button class="boutonpanier">
+            <button class="boutonpanier" id="addreactjs">
                 <img src="asset/images/caddie.png" alt="">
                 Ajouter au panier
             </button>
         </div>
 
-        <div class="my-sql">
-            <img src="asset/images/mysql.png" alt="">
-            <h2 class="nomcours">MySQL</h2>
-            <p>- Nombre d'étoiles -</p>
+        <div id="node" class="cour">
+            <img class="img" src="" alt="">
+            <h2 class="nomcours"></h2>
+            <p class="nb_etoiles"></p>
             <div class="prix">
-                <p class="prixbase">200 €</p>
-                <p class="prixreduction">9.99 €</p>
+                <p class="prixbase"></p>
+                <p class="prixreduction"></p>
             </div>
-            <p>Disponible :</p>
+            <p class="disponibilite"></p>
 
-            <button class="boutonpanier">
+            <button class="boutonpanier" id="addnodejs">
                 <img src="asset/images/caddie.png" alt="">
                 Ajouter au panier
             </button>
         </div>
 
+        <div id="my-sql" class="cour">
+            <img class="img" src="" alt="">
+            <h2 class="nomcours"></h2>
+            <p class="nb_etoiles"></p>
+            <div class="prix">
+                <p class="prixbase"></p>
+                <p class="prixreduction"></p>
+            </div>
+            <p class="disponibilite"></p>
+
+            <button class="boutonpanier" id="addmysql">
+                <img src="asset/images/caddie.png" alt="">
+                Ajouter au panier
+            </button>
+        </div>
+        
     </section>
+    <script src="asset/js/script.js"></script>
+    <script src="asset/js/search.js"></script>
 </body>
 
 </html>
