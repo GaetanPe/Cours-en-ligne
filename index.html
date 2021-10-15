@@ -8,19 +8,17 @@
     <link rel="stylesheet" href="asset/css/style.css">
     <link rel="stylesheet" href="asset/css/tablette.css">
     <link rel="stylesheet" href="asset/css/smartphone.css">
-    <script src="asset/js/script.js"></script>
-    <script src="asset/js/search.js"></script>
-
     <title>Cours en ligne</title>
 </head>
 
 <body>
+    <div id="notification"></div>
     <header>
         <!-- Logo + Panier -->
         <img id="logo-ecole" src="asset/images/coding.png">
         <img id="logo-panier" src="asset/images/caddie.png">
-        
-           
+
+
     </header>
 
     <!-- La barre de recherche -->
@@ -35,68 +33,74 @@
 
         <div class="uiux">
             <img src="asset/images/UIUX.png" alt="">
-            <h2 class="nomcours">UX/UI</h2>
+            <h2 id="cours1" class="nomcours">UX/UI</h2>
             <p>- Nombre d'étoiles -</p>
             <div class="prix">
                 <p class="prixbase">200 €</p>
                 <p class="prixreduction">9.99 €</p>
             </div>
             <p>Disponible :</p>
-            <button class="boutonpanier">
+            <button id="bouton1" class="boutonpanier">
                 <img src="asset/images/caddie.png" alt="">
                 Ajouter au panier
             </button>
+            
+
         </div>
 
         <div class="php">
             <img src="asset/images/php.png" alt="">
-            <h2 class="nomcours">PHP 8</h2>
+            <h2 id="cours2" class="nomcours">PHP 8</h2>
             <p>- Nombre d'étoiles -</p>
             <div class="prix">
                 <p class="prixbase">200 €</p>
                 <p class="prixreduction">9.99 €</p>
             </div>
             <p>Disponible :</p>
-            <button class="boutonpanier">
+            <button id="bouton2" class="boutonpanier">
                 <img src="asset/images/caddie.png" alt="">
                 Ajouter au panier
             </button>
+           
+
         </div>
 
         <div class="react">
             <img src="asset/images/react.png" alt="">
-            <h2 class="nomcours">React JS</h2>
+            <h2 id="cours3" class="nomcours">React JS</h2>
             <p>- Nombre d'étoiles -</p>
             <div class="prix">
                 <p class="prixbase">200 €</p>
                 <p class="prixreduction">9.99 €</p>
             </div>
             <p>Disponible :</p>
-            <button class="boutonpanier">
+            <button id="bouton3" class="boutonpanier">
                 <img src="asset/images/caddie.png" alt="">
                 Ajouter au panier
             </button>
-
+            
         </div>
 
         <div class="node">
             <img src="asset/images/node.png" alt="">
-            <h2 class="nomcours">Node JS</h2>
+            <h2 id="cours4" class="nomcours">Node JS</h2>
             <p>- Nombre d'étoiles -</p>
             <div class="prix">
                 <p class="prixbase">200 €</p>
                 <p class="prixreduction">9.99 €</p>
             </div>
             <p>Disponible :</p>
-            <button class="boutonpanier">
+            <button id="bouton4" class="boutonpanier">
                 <img src="asset/images/caddie.png" alt="">
                 Ajouter au panier
             </button>
+            
+
         </div>
 
         <div class="my-sql">
             <img src="asset/images/mysql.png" alt="">
-            <h2 class="nomcours">MySQL</h2>
+            <h2 id="cours5" class="nomcours">MySQL</h2>
             <p>- Nombre d'étoiles -</p>
             <div class="prix">
                 <p class="prixbase">200 €</p>
@@ -104,13 +108,18 @@
             </div>
             <p>Disponible :</p>
 
-            <button class="boutonpanier">
+            <button id="bouton5" class="boutonpanier">
                 <img src="asset/images/caddie.png" alt="">
                 Ajouter au panier
             </button>
-        </div>
+            
 
+        </div>
+        
     </section>
+
+    <script src="asset/js/script.js"></script>
+    <script src="asset/js/search.js"></script>
 </body>
 
 </html>
