@@ -1,0 +1,47 @@
+[
+    {
+        "img":"asset/images/UIUX.png",
+        "name": "UX/UI",
+        "etoiles":5,
+        "prixBase":200,
+        "prix":9.99,
+        "nbDispo":"2",
+        "isActive":true
+    },
+    {
+        "img":"asset/images/php.png",
+        "name": "PHP 8",
+        "etoiles":2,
+        "prixBase":200,
+        "prix":9.99,
+        "nbDispo":"2",
+        "isActive":true
+    },
+    {
+        "img":"asset/images/react.png",
+        "name": "REACT JS",
+        "etoiles":3,
+        "prixBase":200,
+        "prix":9.99,
+        "nbDispo":"2",
+        "isActive":true
+    },
+    {
+        "img":"asset/images/node.png",
+        "name": "NODE JS",
+        "etoiles":5,
+        "prixBase":200,
+        "prix":9.99,
+        "nbDispo":"2",
+        "isActive":true
+    },
+    {
+        "img":"asset/images/mysql.png",
+        "name": "MySQL",
+        "etoiles":5,
+        "prixBase":200,
+        "prix":9.99,
+        "nbDispo":"2",
+        "isActive":true
+    }
+]

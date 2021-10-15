@@ -1,4 +1,3 @@
-
 function search_cours() {
     var input = document.getElementById('recherche-site').value
     console.log(input);

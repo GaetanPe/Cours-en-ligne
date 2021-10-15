@@ -36,12 +36,17 @@ header img#logo-ecole{
     width: 50px;
     height: 50px;
     padding: 10px;
+    border:1px black solid;
+    margin-left:auto;
+}
+#panier{
+    border:1px red solid;
 }
 ul#article-panier{
     margin:0%;
-    padding:0%;
+    padding:0px;
 
-    width: 100px;
+    width: 300px;
     display:none;
     background-color: rgb(236, 236, 165);
 
@@ -61,13 +66,19 @@ div.search-bar input#recherche-site{
     font-size:30px;
 }
 
-/* Pour afficher la liste dans le panier */
-.panier:hover > #article-panier{
-    display: block;
-    border:1px black solid;
-}
-
 /* Gabriel */
+.row{
+    display:flex;
+    flex-direction: row;
+}
+.row-space-between{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style-type: none;
+    padding:0%;
+    margin:0%;
+}
 
 h1{
     text-align: center;
@@ -179,11 +190,9 @@ button.boutonpanier img{
 .dropdown:hover > #cart-dropdown{
     display: block;
 }
-#panier{
-    background-color: #EECC4499;
-}
+
 .hide{
-    
+
     display: none;
     opacity: 1;
     position: absolute;

@@ -7,9 +7,7 @@
     <link rel="stylesheet" href="asset/css/style.css">
     <link rel="stylesheet" href="asset/css/tablette.css">
     <link rel="stylesheet" href="asset/css/smartphone.css">
-
-
-    <title>Cours en ligne</title>
+    <title>Test-Cours</title>
 </head>
 <body>
     <div id="notification"></div>
@@ -23,35 +21,40 @@
                     <ul class="row-space-between">
                         <li></li>
                         <li></li>
-                        <li><button style="display:none"></button></li>
+                        <li style="display:none"></li>
+                        <li><button style="display:none">SUPP LIGNE</button></li>
                     </ul>
                 </li>
                 <li>
                     <ul class="row-space-between">
                         <li></li>
                         <li></li>
-                        <li><button style="display:none"></button></li>
+                        <li style="display:none"></li>
+                        <li><button style="display:none">SUPP LIGNE</button></li>
                     </ul>
                 </li>
                 <li>
                     <ul class="row-space-between">
                         <li></li>
                         <li></li>
-                        <li><button style="display:none"></button></li>
+                        <li style="display:none"></li>
+                        <li><button style="display:none">SUPP LIGNE</button></li>
                     </ul>
                 </li>
                 <li>
                     <ul class="row-space-between">
                         <li></li>
                         <li></li>
-                        <li><button style="display:none"></button></li>
+                        <li style="display:none"></li>
+                        <li><button style="display:none">SUPP LIGNE</button></li>
                     </ul>
                 </li>
                 <li>
                     <ul class="row-space-between">
                         <li></li>
                         <li></li>
-                        <li><button style="display:none"></button></li>
+                        <li style="display:none"></li>
+                        <li><button style="display:none">SUPP LIGNE</button></li>
                     </ul>
                 </li>
             </ul>
@@ -63,15 +66,17 @@
         <input type="recherche" id="recherche-site" aria-label="La recherche sur le site" size=50
             placeholder="Rechercher ..." onkeyup="search_cours()">
     </div>
-    <button id="SUPPRIMER">SUPP LE LOCAL STORAGE</button>
+    <button id="SUPPRIMER">SUPP le LOCAL</button>
+    
+    
     <!-- La barre de recherche -->
-
     <h1>Cours en ligne</h1>
     <section class="cours">
         <div id= "coursvide" class = "hide">
-        </br></br></br></br></br></br></br></br></br><h3> Aucun cours n'est disponible</h3>
+            </br></br></br></br></br></br></br></br></br><h3> Aucun cours n'est disponible</h3>
 
         </div>
+
         <div id="uiux" class="cour">
             <img class="img" src="" alt="">
             <h2 class="nomcours"></h2>
@@ -95,12 +100,12 @@
             <h2 class="nomcours"></h2>
             <p class="nb_etoiles"></p>
             <div class="prix">
-                <p class="prixbase"></p>
-                <p class="prixreduction"></p>
+                <p id="prixBase" class="prixbase"></p>
+                <p id="prix" class="prixreduction"></p>
             </div>
             <p class="disponibilite"></p>
 
-            <button class="boutonpanier" id="addphp">
+            <button id="addphp" class="boutonpanier">
                 <img src="asset/images/caddie.png" alt="">
                 Ajouter au panier
             </button>
@@ -113,12 +118,12 @@
             <h2 class="nomcours"></h2>
             <p class="nb_etoiles"></p>
             <div class="prix">
-                <p class="prixbase"></p>
-                <p class="prixreduction"></p>
+                <p id="prixBase" class="prixbase"></p>
+                <p id="prix" class="prixreduction"></p>
             </div>
             <p class="disponibilite"></p>
 
-            <button class="boutonpanier" id="addreactjs">
+            <button id="addreactjs"class="boutonpanier">
                 <img src="asset/images/caddie.png" alt="">
                 Ajouter au panier
             </button>
@@ -129,12 +134,12 @@
             <h2 class="nomcours"></h2>
             <p class="nb_etoiles"></p>
             <div class="prix">
-                <p class="prixbase"></p>
-                <p class="prixreduction"></p>
+                <p id="prixBase" class="prixbase"></p>
+                <p id="prix" class="prixreduction"></p>
             </div>
             <p class="disponibilite"></p>
 
-            <button class="boutonpanier" id="addnodejs">
+            <button id="addnodejs" class="boutonpanier">
                 <img src="asset/images/caddie.png" alt="">
                 Ajouter au panier
             </button>
@@ -147,22 +152,18 @@
             <h2 class="nomcours"></h2>
             <p class="nb_etoiles"></p>
             <div class="prix">
-                <p class="prixbase"></p>
-                <p class="prixreduction"></p>
+                <p id="prixBase" class="prixbase"></p>
+                <p id="prix" class="prixreduction"></p>
             </div>
             <p class="disponibilite"></p>
 
-            <button class="boutonpanier" id="addmysql">
+            <button id="addmysql" class="boutonpanier">
                 <img src="asset/images/caddie.png" alt="">
                 Ajouter au panier
             </button>
         </div>
         
     </section>
-    <script src="asset/js/script.js"></script>
-    <script src="asset/js/search.js"></script>
-</body>
-
     <script src="asset/js/script.js"></script>
     <script src="asset/js/search.js"></script>
 </body>
