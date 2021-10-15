@@ -95,7 +95,10 @@ h1{
     justify-content:space-between;
     
 }
-
+.courindispo{
+    font-weight: bold;
+    
+}
 #uiux, #php, #react, #node, #my-sql{
     
     display : flex;
