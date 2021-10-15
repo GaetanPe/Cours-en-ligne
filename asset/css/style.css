@@ -3,6 +3,18 @@ body{
     padding: 0%;
 }
 /* Gabriel */
+.row{
+    display:flex;
+    flex-direction: row;
+}
+.row-space-between{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style-type: none;
+    padding:0%;
+    margin:0%;
+}
 header{
     margin-top:20px;
     display: flex;
@@ -20,10 +32,20 @@ header img#logo-ecole{
     width: 170px;
     height: 80px;
 }
-header img#logo-panier{
+#logo-panier{
     width: 50px;
     height: 50px;
     padding: 10px;
+}
+ul#article-panier{
+    margin:0%;
+    padding:0%;
+
+    width: 100px;
+    display:none;
+    background-color: rgb(236, 236, 165);
+
+    list-style-type: none;
 }
 div.search-bar{
     margin-top: 20px;
@@ -66,7 +88,7 @@ h1{
     
 }
 
-.uiux, .php, .react, .node, .my-sql{
+#uiux, #php, #react, #node, #my-sql{
     
     display : flex;
     flex-direction: column;
@@ -125,6 +147,10 @@ img {
     border:0.1px black solid;
     cursor: pointer;
 }
+.boutonpanier:hover{
+    border:0.1px black solid;
+    cursor: pointer;
+}
 button.boutonpanier img{
     width: auto;
 }
@@ -151,5 +177,19 @@ button.boutonpanier img{
     
 }
 .dropdown:hover > #cart-dropdown{
+    display: block;
+}
+#panier{
+    background-color: #EECC4499;
+}
+.hide{
+    
+    display: none;
+    opacity: 1;
+    position: absolute;
+    z-index: 3;
+    margin-left: 500px;
+}
+.cour{
     display: block;
 }
