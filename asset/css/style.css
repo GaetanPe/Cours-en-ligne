@@ -10,7 +10,7 @@ header{
     justify-content: space-between;
     padding-left: 18%;
     padding-right: 18%;
-    border: 1px solid black; 
+    
 }
 header > p{
     width: auto;
@@ -63,7 +63,7 @@ h1{
     flex-wrap: wrap;
     flex-direction: row;
     justify-content:space-between;
-    border: 1px red solid;
+    
 }
 
 .uiux, .php, .react, .node, .my-sql{
