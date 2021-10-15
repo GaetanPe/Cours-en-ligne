@@ -40,6 +40,11 @@ document.getElementsByClassName("row-space-between")[0].children[3].children[0].
     localStorage.setItem("iuiux", uiux.nbDispo);
     localStorage.setItem("QPUIUX",0)
     location.reload();
+    textnotif.innerHTML = 'Le cours UI/UX à été supprimer du panier'
+    document.getElementById('notification').style.visibility = 'visible'
+    setTimeout(function(){
+        document.getElementById('notification').style.visibility = 'hidden'
+    }, 3000)
 })
 
 
@@ -59,6 +64,11 @@ document.getElementsByClassName("row-space-between")[1].children[3].children[0].
     localStorage.setItem("iphp", php.nbDispo);
     localStorage.setItem("QPPHP",0)
     location.reload();
+    textnotif.innerHTML = 'Le cours PHP à été supprimer du panier'
+    document.getElementById('notification').style.visibility = 'visible'
+    setTimeout(function(){
+        document.getElementById('notification').style.visibility = 'hidden'
+    }, 3000)
 })
 
 let nameReact = localStorage.getItem("nameReact")
@@ -78,6 +88,11 @@ document.getElementsByClassName("row-space-between")[2].children[3].children[0].
     localStorage.setItem("ireactjs", reactjs.nbDispo);
     localStorage.setItem("QPREACT",0)
     location.reload();
+    textnotif.innerHTML = 'Le cours React JS à été supprimer du panier'
+    document.getElementById('notification').style.visibility = 'visible'
+    setTimeout(function(){
+        document.getElementById('notification').style.visibility = 'hidden'
+    }, 3000)
 })
 
 
@@ -97,6 +112,11 @@ document.getElementsByClassName("row-space-between")[3].children[3].children[0].
     localStorage.setItem("inode", node.nbDispo);
     localStorage.setItem("QPNODE",0)
     location.reload();
+    textnotif.innerHTML = 'Le cours Node js à été supprimer du panier'
+    document.getElementById('notification').style.visibility = 'visible'
+    setTimeout(function(){
+        document.getElementById('notification').style.visibility = 'hidden'
+    }, 3000)
 })
 
 let nameMySql = localStorage.getItem("nameMySql")
@@ -115,6 +135,11 @@ document.getElementsByClassName("row-space-between")[4].children[3].children[0].
     localStorage.setItem("imysql", mysql.nbDispo);
     localStorage.setItem("QPMYSQL",0)
     location.reload();
+    textnotif.innerHTML = 'Le cours MySQL à été supprimer du panier'
+    document.getElementById('notification').style.visibility = 'visible'
+    setTimeout(function(){
+        document.getElementById('notification').style.visibility = 'hidden'
+    }, 3000)
 })
 
 
@@ -124,6 +149,11 @@ document.getElementsByClassName("row-space-between")[4].children[3].children[0].
 document.getElementById('SUPPRIMER').addEventListener('click', function(){
     localStorage.clear();
     location.reload();
+    textnotif.innerHTML = 'Le contenue du panier à été supprimer'
+    document.getElementById('notification').style.visibility = 'visible'
+    setTimeout(function(){
+        document.getElementById('notification').style.visibility = 'hidden'
+    }, 3000)
 })
 
 
@@ -189,7 +219,7 @@ document.getElementById('panier').addEventListener('mouseover', function(){
     var NODE = `
         {
             "img":"asset/images/node.png",
-            "name": "NODE JS YOLO",
+            "name": "NODE JS",
             "etoiles":5,
             "prixBase":200,
             "prix":9.99,
