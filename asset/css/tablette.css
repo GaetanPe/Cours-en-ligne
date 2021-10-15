@@ -4,4 +4,16 @@
         max-width: 40em;
         justify-content: space-around;
     }
+    #notification{
+        margin-left: 850px;
+    }
+}@media(max-width:800px){
+    .cours{
+        display: flex;
+        max-width: 40em;
+        justify-content: space-around;
+    }
+    #notification{
+        margin-left: 650px;
+    }
 }
